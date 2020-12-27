@@ -33,10 +33,7 @@ const snippets = [
     },
 ];
 
-tour.register("orchid_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("orchid_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
@@ -50,6 +47,7 @@ tour.register("orchid_tour", {
     wTourUtils.dragNDrop(snippets[5]),
     wTourUtils.clickOnSnippet(snippets[5]),
     wTourUtils.changeBackgroundColor(),
+    wTourUtils.selectColorPalette(),
     wTourUtils.clickOnSave(),
 ]);
 });

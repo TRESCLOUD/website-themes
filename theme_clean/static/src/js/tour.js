@@ -27,10 +27,7 @@ const snippets = [
     },
 ];
 
-tour.register("clean_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("clean_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
@@ -40,6 +37,7 @@ tour.register("clean_tour", {
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.clickOnSnippet(snippets[4]),
     wTourUtils.changeBackgroundColor(),
+    wTourUtils.selectColorPalette(),
     wTourUtils.clickOnSave(),
 ]);
 });

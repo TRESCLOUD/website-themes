@@ -16,7 +16,7 @@
             <p>Keep your files in one place. Manage documents online with an easy to use interface. Rely on an highly secure cloud storage.</p>
         </xpath>
         <xpath expr="//a" position="replace">
-            <a href="#" class="btn btn-primary">Learn more</a>
+            <a href="#" class="btn btn-primary mb-2">Learn more</a>
         </xpath>
         <!-- Column #02 -->
         <xpath expr="//div[hasclass('row')]//div[2]" position="replace">

@@ -42,7 +42,7 @@
     <xpath expr="//p" position="replace"/>
 
     <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a href="#" class="btn btn-primary btn-lg">START NOW</a>
+        <a href="#" class="btn btn-primary btn-lg mb-2">START NOW</a>
     </xpath>
 </template>
 
@@ -78,7 +78,7 @@
     </xpath>
 
     <xpath expr="//a[hasclass('btn')]" position="replace">
-        <a href="#" class="btn btn-secondary btn-lg ">DISCOVER MORE</a>
+        <a href="#" class="btn btn-secondary btn-lg mb-2">DISCOVER MORE</a>
     </xpath>
 </template>
 
@@ -127,26 +127,26 @@
         <img class="d-block img-fluid figure-img rounded shadow-lg" src="/web/image/website.s_three_columns_default_image_1" alt="s_three_columns_1"/>
         <h5>Hey Balàzs!</h5>
         <p>This minimalist weather application was created to be multi-platform. It’s available for iPhone or Android phones.</p>
-        <a href="#" class="btn btn-secondary">READ MORE</a>
+        <a href="#" class="btn btn-secondary mb-2">READ MORE</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]/div" position="replace">
         <img class="d-block img-fluid figure-img rounded shadow-lg" src="/web/image/website.s_three_columns_default_image_2" alt="s_three_columns_2"/>
         <h5>Frank Clothes eCommerce</h5>
         <p>We wanted to propose a friendly shopping experience for the fans of Frank Clothes. Read more how we developed it.</p>
-        <a href="#" class="btn btn-secondary">READ MORE</a>
+        <a href="#" class="btn btn-secondary mb-2">READ MORE</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]/div" position="replace">
         <img class="d-block img-fluid figure-img rounded shadow-lg" src="/web/image/website.s_three_columns_default_image_3" alt="s_three_columns_3"/>
         <h5>Earthquake Monitor</h5>
         <p>We developed this application to  help the population of Goma living under the threat of a volcano.Now it’s available for every area.</p>
-        <a href="#" class="btn btn-secondary">READ MORE</a>
+        <a href="#" class="btn btn-secondary mb-2">READ MORE</a>
     </xpath>
 </template>
 
 <!-- ==== Call To Action ===== -->
 <template id="s_call_to_action" inherit_id="website.s_call_to_action" name="Cobalt s_call_to_action">
     <xpath expr="//a" position="replace">
-        <a href="/contactus" class="btn btn-primary btn-lg">START NOW</a>
+        <a href="/contactus" class="btn btn-primary btn-lg mb-2">START NOW</a>
     </xpath>
 </template>
 

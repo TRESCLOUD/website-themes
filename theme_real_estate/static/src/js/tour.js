@@ -27,10 +27,7 @@ const snippets = [
     },
 ];
 
-tour.register("real_estate_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("real_estate_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
@@ -39,6 +36,7 @@ tour.register("real_estate_tour", {
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.clickOnSnippet(snippets[3]),
     wTourUtils.changeBackgroundColor(),
+    wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.clickOnSave(),

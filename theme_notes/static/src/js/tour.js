@@ -25,10 +25,7 @@ const snippets = [
     },
 ];
 
-tour.register("notes_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("notes_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h2'),
     wTourUtils.goBackToBlocks(),

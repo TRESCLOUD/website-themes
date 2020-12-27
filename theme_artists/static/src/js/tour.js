@@ -25,10 +25,7 @@ const snippets = [
     },
 ];
 
-tour.register("artists_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("artists_tour", [
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.dragNDrop(snippets[1]),
     wTourUtils.clickOnText(snippets[1], 'h2'),

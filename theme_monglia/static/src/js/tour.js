@@ -39,13 +39,9 @@ const snippets = [
 
 ];
 
-tour.register("monglia_tour", {
-    url: "/",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("monglia_tour", [
     wTourUtils.dragNDrop(snippets[0]),
-    wTourUtils.clickOnSnippet(snippets[0]),
-    wTourUtils.changeOption('minHeight', 'Full screen', _t('height')),
+    wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
 
     wTourUtils.dragNDrop(snippets[1]),
@@ -55,6 +51,7 @@ tour.register("monglia_tour", {
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeBackgroundColor('left'),
+    wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks('left'),
 
     wTourUtils.dragNDrop(snippets[5]),

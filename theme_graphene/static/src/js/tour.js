@@ -28,24 +28,15 @@ const snippets = [
         id: 's_call_to_action',
         name: 'Call to Action',
     },
-    {
-        id: 's_comparisons',
-        name: 'Comparisons',
-    },
 ];
 
 
-tour.register("graphene_tour", {
-    url: "/",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("graphene_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks('left'),
 
     wTourUtils.dragNDrop(snippets[1]),
-    wTourUtils.changeImage(snippets[1], 'left'),
-    wTourUtils.goBackToBlocks('left'),
 
     wTourUtils.dragNDrop(snippets[2]),
     wTourUtils.dragNDrop(snippets[3], 'top'),
@@ -53,12 +44,7 @@ tour.register("graphene_tour", {
     wTourUtils.dragNDrop(snippets[4], 'top'),
     wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeBackgroundColor('left'),
-    wTourUtils.goBackToBlocks('left'),
-
-    wTourUtils.dragNDrop(snippets[5]),
-    wTourUtils.clickOnSnippet(snippets[5], 'top'),
-    wTourUtils.changeOption('ColoredLevelBackground', 'Shape', _t('Shape')),
-    wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
+    wTourUtils.selectColorPalette(),
 
     wTourUtils.clickOnSave(),
 ]);

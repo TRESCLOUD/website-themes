@@ -120,23 +120,29 @@ $o-theme-h5-font-size-multiplier: (20 / 14);
 $o-theme-h6-font-size-multiplier: (16 / 14);
 
 $o-theme-font-configs: (
-    'Proxima': (
-        'family': ('Proxima', sans-serif),
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),  // font update - Proxima -> Montserrat
+        'url': 'Montserrat:300,300i,400,400i,600,600i',
     ),
-    'Comic Sans MS': (
-        'family': ('Comic Sans MS', cursive),
+    'Comic Neue': (
+        'family': ('Comic Neue', cursive),  // font update - Comic Sans MS -> Comic Neue
+        'url': 'Comic+Neue:300,300i,400,400i,700,700i',
     ),
-    'Fontastique': (
-        'family': ('Fontastique', cursive),
+    'Bubblegum Sans': (
+        'family': ('Bubblegum Sans', cursive),   // font update - Fontastique -> Bubblegum+Sans
+        'url': 'Bubblegum+Sans:300,300i,400,400i,700,700i',
     ),
-    'Luminari': (
-        'family': ('Luminari', serif),
+    'Eagle Lake': (
+        'family': ('Eagle Lake', serif),  // font update - Luminari -> Eagle Lake
+        'url': 'Eagle+Lake:300,300i,400,400i,700,700i',
     ),
-    'Fecske': (
-        'family': ('Fecske', sans-serif),
+    'Marcellus': (
+        'family': ('Marcellus', sans-serif),   // font update - Fecske -> Marcellus
+        'url': 'Marcellus:300,300i,400,400i,700,700i',
     ),
-    'Din Alternate': (
-        'family': ('Din Alternate', sans-serif),
+    'Roboto': (  //  stable ! Din -> Roboto
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
     ),
     'Oxygen': (
         'family': ('Oxygen', sans-serif),
@@ -175,10 +181,10 @@ $o-website-values-palettes: (
         'logo-height': 3rem,
         'fixed-logo-height': 3rem,
         'btn-border-radius': 2rem,
-        'font': 'Proxima',
-        'headings-font': 'Fontastique',
-        'navbar-font': 'Fontastique',
-        'buttons-font': 'Fontastique',
+        'font': 'MontSerrat',
+        'headings-font': 'Bubblegum Sans',
+        'navbar-font': 'Bubblegum Sans',
+        'buttons-font': 'Bubblegum Sans',
         'link-underline': 'never',
         'header-template': 'centered_logo',
         'footer-template': 'minimalist',

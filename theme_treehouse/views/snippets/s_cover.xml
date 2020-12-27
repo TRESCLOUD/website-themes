@@ -18,7 +18,7 @@
         </xpath>
         <!-- Button -->
         <xpath expr="//a" position="replace">
-            <a href="/contactus" class="btn btn-primary btn-lg">Get involved</a>
+            <a href="/contactus" class="btn btn-primary btn-lg mb-2">Get involved</a>
         </xpath>
     </template>
 </odoo>

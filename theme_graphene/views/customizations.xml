@@ -19,13 +19,13 @@
         <div class="row">
             <div class="col col-lg-11">
                 <h1 style="text-align: right;">
-                    <font style="font-size: 62px;"><b>Making the difference. <br/>Every Day.</b></font>
+                    <font style="font-size: 62px;"><b>Making the difference. </b></font>
                 </h1>
                 <p class="lead o_default_snippet_text" style="text-align: right">
                     Our mission is to give customers the best experience.<br/>Extensive documentation &amp; guides, an active community,<br/>24/7 support make it a pleasure to work with us.
                 </p>
                 <p style="text-align: right">
-                    <a href="/contactus" class="btn btn-primary btn-lg o_default_snippet_text">Contact us</a>
+                    <a href="/contactus" class="btn btn-primary btn-lg mb-2 o_default_snippet_text">Contact us</a>
                 </p>
             </div>
         </div>
@@ -214,7 +214,7 @@
         <attribute name="class" add="o_cc5" remove="o_cc3" separator=" "/>
     </xpath>
     <xpath expr="//h3" position="replace">
-        <h3 style="text-align: right;"><b>50,000+ companies</b> run our software to grow their businesses.</h3>
+        <h3 style="text-align: right;"><b>50,000+ companies</b> run our software.</h3>
     </xpath>
     <xpath expr="//div[hasclass('col-lg-9')]" position="attributes">
         <attribute name="class" add="col-lg-8" remove="col-lg-9" separator=" "/>
@@ -231,16 +231,16 @@
     </xpath>
 
     <xpath expr="//div[hasclass('row')]/div//a" position="replace">
-        <a href="/contactus" class="btn btn-primary">Start Now</a>
+        <a href="/contactus" class="btn btn-primary mb-2">Start Now</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]//a" position="replace">
-        <a href="/contactus" class="btn btn-primary">Start Now</a>
+        <a href="/contactus" class="btn btn-primary mb-2">Start Now</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[2]//li[2]" position="replace">
         <li class="list-group-item">Access to all modules</li>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]//a" position="replace">
-        <a href="/contactus" class="btn btn-primary">Start Now</a>
+        <a href="/contactus" class="btn btn-primary mb-2">Start Now</a>
     </xpath>
     <xpath expr="//div[hasclass('row')]/div[3]//li[2]" position="replace">
         <li class="list-group-item">Access to all modules and features</li>

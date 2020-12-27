@@ -19,7 +19,7 @@
         </xpath>
         <!-- Button -->
         <xpath expr="//a" position="replace">
-            <a href="#" class="btn btn-primary">Our Solutions</a>
+            <a href="#" class="btn btn-primary mb-2">Our Solutions</a>
         </xpath>
     </template>
 </odoo>

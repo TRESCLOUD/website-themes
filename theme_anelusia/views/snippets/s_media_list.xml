@@ -18,7 +18,7 @@
         </xpath>
         <xpath expr="//div[hasclass('s_media_list_item')][2]//p" position="replace">
             <p>The right summer essentials can make the difference between a good time and a stand-out great time. Discover our selection for everyday wear during the warm summer months</p>
-            <a href="#" class="btn btn-primary">Read more</a>
+            <a href="#" class="btn btn-primary mb-2">Read more</a>
         </xpath>
         <!-- Media #03 -->
         <xpath expr="//div[hasclass('s_media_list_item')][3]" position="replace"/>

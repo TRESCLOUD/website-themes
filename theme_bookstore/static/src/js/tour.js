@@ -31,10 +31,7 @@ const snippets = [
     },
 ];
 
-tour.register("bookstore_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("bookstore_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
@@ -43,6 +40,7 @@ tour.register("bookstore_tour", {
     wTourUtils.dragNDrop(snippets[3]),
     wTourUtils.clickOnSnippet(snippets[3]),
     wTourUtils.changeBackgroundColor(),
+    wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks(),
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.dragNDrop(snippets[5]),

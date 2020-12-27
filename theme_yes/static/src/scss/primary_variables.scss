@@ -55,8 +55,9 @@ $o-theme-h5-font-size-multiplier: (14 / 12);
 $o-theme-h6-font-size-multiplier: 1;
 
 $o-theme-font-configs: (
-    'SinkinSans': (
-        'family': ('SinkinSans', sans-serif),
+    'Spartan': (
+        'family': ('Spartan', sans-serif),  // font update - SinKinSans -> Spartan
+        'url': 'Spartan:300,300i,400,400i,700,700i',
     ),
     'Rajdhani': (
         'family': ('Rajdhani', sans-serif),

@@ -27,12 +27,9 @@ const snippets = [
 ];
 
 
-tour.register("paptic_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("paptic_tour", [
     wTourUtils.dragNDrop(snippets[0], 'top'),
-    wTourUtils.clickOnText(snippets[0], 'h1', 'right'),
+    wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
 
     wTourUtils.dragNDrop(snippets[1], 'top'),

@@ -31,10 +31,7 @@ const snippets = [
     },
 ];
 
-tour.register("bistro_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("bistro_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
@@ -45,6 +42,7 @@ tour.register("bistro_tour", {
     wTourUtils.dragNDrop(snippets[5]),
     wTourUtils.clickOnSnippet(snippets[5], 'top'),
     wTourUtils.changeBackgroundColor(),
+    wTourUtils.selectColorPalette(),
     wTourUtils.clickOnSave(),
 ]);
 });

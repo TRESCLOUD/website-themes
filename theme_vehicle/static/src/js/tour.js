@@ -38,10 +38,7 @@ const snippets = [
     },
 ];
 
-tour.register("vehicle_tour", {
-    url: "/",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("vehicle_tour", [
     wTourUtils.dragNDrop(snippets[0], 'top'),
     wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
@@ -50,14 +47,12 @@ tour.register("vehicle_tour", {
     wTourUtils.dragNDrop(snippets[2], 'top'),
 
     wTourUtils.dragNDrop(snippets[3], 'top'),
-    wTourUtils.changeImage(snippets[3], 'right'),
-    wTourUtils.goBackToBlocks(),
-
     wTourUtils.dragNDrop(snippets[4], 'top'),
     wTourUtils.dragNDrop(snippets[5], 'top'),
     wTourUtils.dragNDrop(snippets[6], 'top'),
     wTourUtils.clickOnSnippet(snippets[6], 'top'),
     wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
+    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
 
     wTourUtils.clickOnSave(),
 ]);

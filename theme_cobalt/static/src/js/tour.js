@@ -31,14 +31,9 @@ const snippets = [
 ];
 
 
-tour.register("cobalt_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("cobalt_tour", [
     wTourUtils.dragNDrop(snippets[0]),
-
-    wTourUtils.selectHeader(),
-    wTourUtils.changeOption('TopMenuVisibility', 'we-toggler', _t('transparency')),
+    wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
 
     wTourUtils.dragNDrop(snippets[1]),
@@ -48,7 +43,7 @@ tour.register("cobalt_tour", {
     wTourUtils.dragNDrop(snippets[4]),
     wTourUtils.clickOnSnippet(snippets[4], 'top'),
     wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
-
+    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
     wTourUtils.clickOnSave(),
 ]);
 });

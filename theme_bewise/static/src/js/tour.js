@@ -38,29 +38,19 @@ const snippets = [
     },
 ];
 
-tour.register("bewise_tour", {
-    url: "/",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("bewise_tour", [
     wTourUtils.dragNDrop(snippets[0], 'top'),
-    wTourUtils.clickOnSnippet(snippets[0], 'bottom'),
-    wTourUtils.changeOption('minHeight', 'Half screen', _t('height')),
+    wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
     wTourUtils.goBackToBlocks(),
-
     wTourUtils.dragNDrop(snippets[1], 'top'),
-
     wTourUtils.dragNDrop(snippets[2], 'top'),
-    wTourUtils.clickOnText(snippets[2], 'h4', 'top'),
-    wTourUtils.goBackToBlocks(),
-
     wTourUtils.dragNDrop(snippets[3], 'top'),
     wTourUtils.dragNDrop(snippets[4], 'top'),
     wTourUtils.dragNDrop(snippets[5], 'top'),
-
     wTourUtils.dragNDrop(snippets[6], 'top'),
     wTourUtils.clickOnSnippet(snippets[6], 'top'),
     wTourUtils.changeOption('BackgroundShape', 'we-toggler', _t('Background Shape')),
-
+    wTourUtils.selectNested('we-select-page', 'BackgroundShape', ':not(.o_we_pager_controls)', _t('Background Shape')),
     wTourUtils.clickOnSave(),
 ]);
 });

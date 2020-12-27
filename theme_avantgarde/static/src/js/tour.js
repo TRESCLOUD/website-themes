@@ -18,10 +18,6 @@ const snippets = [
         name: 'Image - Text',
     },
     {
-        id: 's_image_gallery',
-        name: 'Images Wall',
-    },
-    {
         id: 's_references',
         name: 'References',
     },
@@ -31,12 +27,9 @@ const snippets = [
     },
 ];
 
-tour.register("avantgarde_tour", {
-    url: "/",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("avantgarde_tour", [
     wTourUtils.dragNDrop(snippets[0], 'top'),
-    wTourUtils.clickOnText(snippets[0], 'h1', 'top'),
+    wTourUtils.clickOnText(snippets[0], 'h1', 'left'),
     wTourUtils.goBackToBlocks(),
 
     wTourUtils.dragNDrop(snippets[1], 'left'),
@@ -44,13 +37,12 @@ tour.register("avantgarde_tour", {
     wTourUtils.dragNDrop(snippets[2], 'bottom'),
     wTourUtils.clickOnSnippet(snippets[2], 'top'),
     wTourUtils.changeBackgroundColor('top'),
+    wTourUtils.selectColorPalette(),
     wTourUtils.goBackToBlocks(),
 
-    wTourUtils.dragNDrop(snippets[3], 'left'),
-    wTourUtils.addMedia(),
+    wTourUtils.dragNDrop(snippets[3], 'top'),
 
     wTourUtils.dragNDrop(snippets[4], 'top'),
-    wTourUtils.dragNDrop(snippets[5], 'top'),
     wTourUtils.clickOnSave(),
 ]);
 });

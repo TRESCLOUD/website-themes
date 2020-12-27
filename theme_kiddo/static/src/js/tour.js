@@ -29,10 +29,7 @@ const snippets = [
     },
 ];
 
-tour.register("kiddo_tour", {
-    url: "/#",
-    saveAs: "homepage",
-}, [
+wTourUtils.registerThemeHomepageTour("kiddo_tour", [
     wTourUtils.dragNDrop(snippets[0]),
     wTourUtils.clickOnText(snippets[0], 'h1'),
     wTourUtils.goBackToBlocks(),
